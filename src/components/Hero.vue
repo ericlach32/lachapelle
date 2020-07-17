@@ -6,9 +6,9 @@
 </template>
 
 <script>
+import { gsap, TweenMax, Power3 } from 'gsap'
 // eslint-disable-next-line
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
-import { TweenMax, Power3 } from 'gsap'
 
 export default {
   name: 'Hero',

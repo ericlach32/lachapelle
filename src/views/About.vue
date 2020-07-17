@@ -13,7 +13,7 @@
   align-items: center;
   height: 100vh;
   padding: 1.5rem;
-  
+
   p {
     max-width: 747px;
   }
