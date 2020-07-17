@@ -5,6 +5,26 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'about',
+  components: {
+
+  },
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+
+  },
+  created () {
+
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .about {
   display: flex;
@@ -12,7 +32,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 1.5rem;
+  height: calc(var(--vh, 1vh) * 100);
+
+  h1, p {
+    padding: 0 1.5rem;
+  }
 
   p {
     max-width: 747px;

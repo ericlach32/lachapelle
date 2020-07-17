@@ -34,6 +34,7 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
 
   img {
     width: 75%;

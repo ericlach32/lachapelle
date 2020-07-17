@@ -9,8 +9,9 @@
 .music {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  height:calc(var(--vh, 1vh) * 100);
 }
 </style>
