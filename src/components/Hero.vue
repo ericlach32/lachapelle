@@ -6,9 +6,10 @@
 </template>
 
 <script>
+import { TweenMax, ScrollToPlugin, Power3 } from 'gsap/all'
+
 // eslint-disable-next-line
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
-import { TweenMax, Power3 } from 'gsap'
+const plugins = [ScrollToPlugin]
 
 export default {
   name: 'Hero',
@@ -17,10 +18,10 @@ export default {
   },
   methods: {
     scrollPage () {
-      // TweenMax.to(window, 0.74, {
-      //   scrollTo: document.body.scrollHeight,
-      //   ease: Power3.easeIn
-      // })
+      TweenMax.to(window, 0.74, {
+        scrollTo: document.body.scrollHeight,
+        ease: Power3.easeIn
+      })
     }
   }
 }
@@ -39,7 +40,7 @@ export default {
   }
 
   .downArrow {
-    // cursor: pointer;
+    cursor: pointer;
     position: absolute;
     bottom: 2rem;
     width: 23px;
