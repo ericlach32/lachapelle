@@ -1,8 +1,8 @@
 <template>
   <div class="info">
-    <h1>Lorem, ipsum.</h1>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iusto voluptatibus, saepe asperiores maxime vero! Consequatur velit aliquid nemo aperiam aliquam quaerat molestias, facere fuga fugiat quisquam soluta delectus dignissimos architecto cumque vitae et accusantium eius eum vel quas ea expedita quam illo? Doloremque ullam tempora, sequi cumque officiis incidunt.</p>
+    <h1>Lachapelle</h1>
+    <h2>Music</h2>
+    <p>Lachapelle is a Canadian producer, multi-instrumentalist and emcee. His debut consists of sample-heavy hip hop beats inspired by the great loop-diggers before him.</p>
   </div>
 </template>
 
