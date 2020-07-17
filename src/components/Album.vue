@@ -45,6 +45,7 @@ export default {
 
   img {
     width: 30vw;
+    height: 30vw;
     max-width: 777px;
     padding-right: 2rem;
   }
@@ -66,6 +67,7 @@ export default {
 
     img {
       width: 75vw;
+      height: auto;
       max-width: 100%;
       padding: 0;
     }

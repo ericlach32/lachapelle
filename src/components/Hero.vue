@@ -1,56 +1,48 @@
 <template>
   <div class="hero">
-    <img src="../assets/img/logo.svg" alt="">
-    <img src="../assets/img/down.png" alt="" @click="scrollPage" class="downArrow">
+    <img src="../assets/img/logo.svg" alt="Lachapelle logo">
+    <img src="../assets/img/down.png" alt="Scroll" class="downArrow" @click="scrollPage">
   </div>
 </template>
 
 <script>
-
-// import { TweenMax } from 'gsap'
+// eslint-disable-next-line
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+import { TweenMax, Power3 } from 'gsap'
 
 export default {
   name: 'Hero',
   data () {
-    return {
-      // scrolled: false,
-      top: true
-    }
+    return {}
   },
   methods: {
     scrollPage () {
-
+      TweenMax.to(window, 0.74, {
+        scrollTo: document.body.scrollHeight,
+        ease: Power3.easeIn
+      })
     }
-    // handleScroll () {
-    //   this.scrolled = window.scrollY > 0
-    //   this.scrollPage()
-    // }
   }
-  // created () {
-  //   window.addEventListener('scroll', this.handleScroll)
-  // },
-  // destroyed () {
-  //   window.removeEventListener('scroll', this.handleScroll)
-  // }
 }
 </script>
 
 <style lang="scss" scoped>
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
-    img {
-        width: 75%;
-    }
+  img {
+    width: 75%;
+  }
 
-    .downArrow {
-        width: 23px;
-        position: absolute;
-        bottom: 2rem;
-    }
+  .downArrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    width: 23px;
+  }
 }
 </style>
